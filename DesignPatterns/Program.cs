@@ -7,6 +7,7 @@
             OldPrinter oldPrinter = new OldPrinter();
             INewPrinter printer = new PrinterAdapter(oldPrinter);
             printer.Print("hihi");
+
         }
     }
 }

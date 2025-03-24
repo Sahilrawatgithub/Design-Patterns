@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!! In this repo, I'll be implementing different design patterns in their respective branches!!");
+            OldPrinter oldPrinter = new OldPrinter();
+            INewPrinter printer = new PrinterAdapter(oldPrinter);
+            printer.Print("hihi");
         }
     }
 }

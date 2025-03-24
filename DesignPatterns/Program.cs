@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!! In this repo, I'll be implementing different design patterns in their respective branches!!");
+            ICarBuilder builder = new SportsCarBuilder();
+            Director director = new Director(builder);
+
+            director.ConstructSportsCar();
+
+            Car sportsCar = director.GetCar();
+            Console.WriteLine(sportsCar);
         }
     }
 }

@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!! In this repo, I'll be implementing different design patterns in their respective branches!!");
+            Console.Write("Enter vehicle type : ");
+            string vehicle=Console.ReadLine();
+
+            IVehicle vehicle1 = VehicleFactory.GetVehicle(vehicle);
+            Console.WriteLine(vehicle1.vehicletype());
+            Console.WriteLine(vehicle1.wheels());
         }
     }
 }

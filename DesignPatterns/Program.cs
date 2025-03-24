@@ -8,8 +8,8 @@
             string vehicle=Console.ReadLine();
 
             IVehicle vehicle1 = VehicleFactory.GetVehicle(vehicle);
-            Console.WriteLine(vehicle1.vehicletype());
-            Console.WriteLine(vehicle1.wheels());
+            Console.WriteLine("type of vehicle: "+vehicle1.vehicletype());
+            Console.WriteLine("number of wheels: "+vehicle1.wheels());
         }
     }
 }
